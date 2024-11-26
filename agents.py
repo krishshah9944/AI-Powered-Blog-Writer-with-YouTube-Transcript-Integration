@@ -7,7 +7,7 @@ llm=ChatGroq(
     model="groq/llama3-8b-8192",
     temperature=0.7,
     # base_url="https://api.groq.com/openai/v1",
-    api_key="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"
+    api_key=""
 )
 
 
