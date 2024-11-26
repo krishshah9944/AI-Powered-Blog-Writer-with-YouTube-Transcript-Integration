@@ -10,7 +10,7 @@ from crewai_tools import YoutubeChannelSearchTool
 #             config=dict(
 #                 model="llama3-70b-8192",
 #                 base_url="https://api.groq.com/openai/v1",  # GROQ API URL
-#                 api_key="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",
+#                 api_key="",
 #                 temperature=0.7,  # Add other parameters as needed
 #             ),
 #         ),
@@ -20,7 +20,7 @@ from crewai_tools import YoutubeChannelSearchTool
 #                 model="models/text-embedding-004",  # Replace with a GROQ-supported embedding model if needed
 #                 task_type="retrieval_document",
 #                 # base_url="https://generativelanguage.googleapis.com",  # GROQ API URL
-#                 # api_key="AIzaSyABQVmM2gg-MP1RBm-LUYZ6lbJ7SO70WsM",
+#                 # api_key="",
 #             ),
 #         ),
 #     ) 
@@ -30,7 +30,7 @@ from crewai_tools import YoutubeChannelSearchTool
 
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyABQVmM2gg-MP1RBm-LUYZ6lbJ7SO70WsM")
+genai.configure(api_key="")
 
 # Initialize the tool with corrected arguments
 yt_tool = YoutubeChannelSearchTool(
@@ -41,7 +41,7 @@ yt_tool = YoutubeChannelSearchTool(
             config=dict(
                 model="llama3-70b-8192",  # GROQ-supported model
                 base_url="https://api.groq.com/openai/v1",  # GROQ API base URL
-                api_key="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",
+                api_key="",
                 temperature=0.7,  # Adjust as necessary
             ),
         ),
