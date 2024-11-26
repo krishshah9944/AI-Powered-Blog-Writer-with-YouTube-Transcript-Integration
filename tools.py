@@ -1,9 +1,9 @@
 from crewai_tools import YoutubeChannelSearchTool
 
 # Initialize the tool with a specific Youtube channel handle to target your search
-# yt_tool = YoutubeChannelSearchTool(youtube_channel_handle='@krishnaik06')
+# yt_tool = YoutubeChannelSearchTool(youtube_channel_handle='')
 
-# yt_tool = YoutubeChannelSearchTool( youtube_channel_handle='@krishnaik06' ,
+# yt_tool = YoutubeChannelSearchTool( youtube_channel_handle='' ,
 #     config=dict(
 #         llm=dict(
 #             provider="groq",  # Use "custom" or any identifier for GROQ
@@ -34,7 +34,7 @@ genai.configure(api_key="")
 
 # Initialize the tool with corrected arguments
 yt_tool = YoutubeChannelSearchTool(
-    youtube_channel_handle="@krishnaik06",  # This must be a string
+    youtube_channel_handle="@IBMTechnology",  # This must be a string
     config=dict(
         llm=dict(
             provider="groq",  # Use "groq" as the LLM provider
